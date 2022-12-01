@@ -1,0 +1,16 @@
+For wireless transmission 25 to 1:
+
+Executing tcl file:
+> ns wireless25.tcl
+
+Creating throughput data file from trace file:
+> awk -f wireless25_throughput.awk wireless25.tr > wireless25_throughput.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f wireless25_plr.awk wireless25.tr > wireless25_plr.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "wireless25_tgnu.plt"
+>> load "wireless25_plrgnu.plt"
+

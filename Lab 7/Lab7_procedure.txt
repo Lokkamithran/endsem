@@ -1,0 +1,10 @@
+For queue monitoring:
+
+Executing tcl file:
+> ns queue_moni.tcl
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "avg_queue_len.plt"
+>> load "cur_queue_len.plt"
+

@@ -1,0 +1,10 @@
+For chat server:
+
+> g++ server.cpp -o server
+> g++ client.cpp -o server
+
+On terminal 1:
+> ./server 12345
+
+On terminal 2:
+> ./client 127.0.0.1 12345

@@ -1,0 +1,60 @@
+For 2 Clients:
+
+> gcc server.c -o server
+> gcc client1.c -o client1
+> gcc client2.c -o client2
+
+On terminal 1:
+> ./server 12345
+
+On terminal 2:
+> ./client1 127.0.0.1 12345
+(Enter an alphabet when prompted)
+
+> ./client2 127.0.0.1 12345
+
+
+
+For Calculator:
+
+> gcc server.c -o server
+> gcc client.c -o client
+
+On terminal 1:
+> ./server 12345
+
+On terminal 2:
+> ./client 127.0.0.1 12345
+
+
+
+For File Transfer:
+
+> gcc server.c -o server
+> gcc client.c -o client
+
+On terminal 1:
+> ./server
+
+On terminal 2:
+> ./client
+
+
+
+For Open Ports:
+
+> gcc check.c -o check
+> ./check
+
+
+
+For sorting:
+
+> gcc server.c -o server
+> gcc client.c -o client
+
+On terminal 1:
+> ./server
+
+On terminal 2:
+> ./client

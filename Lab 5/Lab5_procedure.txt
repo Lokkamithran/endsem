@@ -1,0 +1,31 @@
+For mesh topology:
+
+Executing tcl file:
+> ns mesh.tcl
+
+Creating throughput data file from trace file:
+> awk -f mesh_throughput.awk mesh.tr > mesh_tgraph.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f mesh_plr.awk mesh.tr > mesh_plrgraph.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "mesh_tgnu.plt"
+>> load "mesh_plrgnu.plt"
+
+For ring topology:
+
+Executing tcl file:
+> ns ring.tcl
+
+Creating throughput data file from trace file:
+> awk -f ring_throughput.awk ring.tr > ring_tgraph.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f ring_plr.awk ring.tr > ring_plrgraph.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "ring_tgnu.plt"
+>> load "ring_plrgnu.plt"

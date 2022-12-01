@@ -1,0 +1,69 @@
+For bus topology:
+
+Executing tcl file:
+> ns bus.tcl
+
+Creating throughput data file from trace file:
+> awk -f bus_throughput.awk bus.tr > bus_tgraph.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f bus_plr.awk bus.tr > bus_plrgraph.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "bus_tgnu.plt"
+>> load "bus_plrgnu.plt"
+
+
+
+For star topology:
+
+Executing tcl file:
+> ns star.tcl
+
+Creating throughput data file from trace file:
+> awk -f star_throughput.awk star.tr > star_tgraph.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f star_plr.awk star.tr > star_plrgraph.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "star_tgnu.plt"
+>> load "star_plrgnu.plt"
+
+
+
+For wired transmission:
+
+Executing tcl file:
+> ns wired.tcl
+
+Creating throughput data file from trace file:
+> awk -f wired_throughput.awk wired.tr > wired_tgraph.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f wired_plr.awk wired.tr > wired_plrgraph.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "wired_tgnu.plt"
+>> load "wired_plrgnu.plt"
+
+
+
+For wireless transmission:
+
+Executing tcl file:
+> ns wireless.tcl
+
+Creating throughput data file from trace file:
+> awk -f wireless_throughput.awk wireless.tr > wireless_tgraph.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f wireless_plr.awk wireless.tr > wireless_plrgraph.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "wireless_throughput.plt"
+>> load "wireless_plr.plt"

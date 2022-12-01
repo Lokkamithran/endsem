@@ -1,0 +1,25 @@
+For Reno:
+
+Executing tcl file:
+> ns reno.tcl
+
+Creating packet loss ratio data file from trace file:
+> awk -f reno_plr.awk reno.tr > reno_plr.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "reno_t.plt"
+>> load "reno_plr.plt"
+
+For Tahoe:
+
+Executing tcl file:
+> ns tahoe.tcl
+
+Creating packet loss ratio data file from trace file:
+> awk -f tahoe_plr.awk tahoe.tr > tahoe_plr.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "tahoe_t.plt"
+>> load "tahoe_plr.plt"

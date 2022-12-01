@@ -1,0 +1,16 @@
+For aodv routing:
+
+Executing tcl file:
+> ns aodv.tcl
+
+Creating throughput data file from trace file:
+> awk -f aodv_t.awk aodv.tr > aodv_t.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f aodv_plr.awk aodv.tr > aodv_plr.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "aodv_t.plt"
+>> load "aodv_plr.plt"
+

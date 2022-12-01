@@ -1,0 +1,16 @@
+For udp and tcp:
+
+Executing tcl file:
+> ns UDP_TCP.tcl
+
+Creating throughput data file from trace file:
+> awk -f UDP_TCP_t.awk UDP_TCP.tr > UDP_TCP_t.dat
+
+Creating packet loss ratio data file from trace file:
+> awk -f UDP_TCP_plr.awk UDP_TCP.tr > UDP_TCP_plr.dat
+
+Generating graphs using gnuplot
+> gnuplot
+>> load "UDP_TCP_t.plt"
+>> load "UDP_TCP_plr.plt"
+

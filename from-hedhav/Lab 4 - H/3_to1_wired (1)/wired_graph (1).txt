@@ -1,0 +1,23 @@
+set term png small
+set autoscale
+set xtic auto
+set ytic auto
+set title "Throughput"
+set xlabel "Time"
+set ylabel "BPS"
+
+set out "wired_throughput.png"
+
+plot "wired.dat" using 1:2 with linespoints
+
+reset 
+
+set autoscale
+set xtic auto
+set ytic auto
+set title "Packet Losses"
+set xlabel "Time"
+set ylabel "Packet Losses"
+set out "wired_pl.png"
+
+plot "wired_pl.dat" using 1:2 with linespoints
